@@ -1,0 +1,339 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Actual",
+            "name": "actual",
+            "kind": "Measure",
+            "requiredTypes": [{
+                "numeric": true
+            }]
+        },
+        {
+            "displayName": "Plan",
+            "name": "plan",
+            "kind": "Measure",
+            "requiredTypes": [{
+                "numeric": true
+            }]
+        }        
+    ],
+    "objects": {
+        "radialProgressBar": {
+            "displayName": "Main Radial Bar",
+            "properties": {
+                "Length":{
+                    "displayName": "Length (in Pi)",
+                    "description": "Length of radial progress bar",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcWidth": {
+                    "displayName": "Bar Width",
+                    "description": "Width of guage.",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcLineThickness": {
+                    "displayName": "Line Thickness",
+                    "description": "Line thickness of gauge.",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcCornerRadius": {
+                    "displayName": "Corner Radius",
+                    "description": "Corner Radius - Maximum is half of Bar Width",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcLineColor": {
+                    "displayName": "Line Color",
+                    "description": "Line color of gauge.",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                         }
+                    }
+                },
+                "arcFillColor": {
+                    "displayName": "Background Color",
+                    "description": "Fill background color on the inside of gauge.",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "arcPlanColor": {
+                    "displayName": "Fiil Color",
+                    "description": "Fill foreground color (Plan).",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "radialMarker": {
+            "displayName": "Main Radial Marker",
+            "properties": {
+                "markerHeight_major":{
+                    "displayName": "Marker Height (Major)",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "markerHeight_minor":{
+                    "displayName": "Marker Height (Minor)",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "markerWidth":{
+                    "displayName": "Marker Width",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "minimum":{
+                    "displayName": "Minimum Value",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "maximum":{
+                    "displayName": "Maximum Value",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "CenterText": {
+            "displayName": "Text Properties (Center)",
+            "properties": {
+                "textFontSize": {
+                    "displayName": "Font size (value)",
+                    "description": "Font size (value)",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "labelFontSize": {
+                    "displayName": "Font size (label)",
+                    "description": "Font size of label (text)",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "offsetPosition": {
+                    "displayName": "Vertical adjustment",
+                    "description": "Move the text higher or lower",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "diameter": {
+                    "displayName": "Diameter",
+                    "description": "Diameter of circle",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "textFontColor": {
+                    "displayName": "Font color for value",
+                    "description": "Font color for value",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "labelFontColor": {
+                    "displayName": "Font color for label",
+                    "description": "Font color for label (text)",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "RadialBarText": {
+            "displayName": "Text Properties (Radial)",
+            "properties": {
+                "show": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "textFontColor": {
+                    "displayName": "Font color",
+                    "description": "Font color for value",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "radialProgressBar2": {
+            "displayName": "Side Radial Bar",
+            "properties": {
+                "show": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "Length":{
+                    "displayName": "Length (in Pi)",
+                    "description": "Length of radial progress bar",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcWidth": {
+                    "displayName": "Bar Width",
+                    "description": "Width of guage.",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcLineThickness": {
+                    "displayName": "Line Thickness",
+                    "description": "Line thickness of gauge.",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcOffset": {
+                    "displayName": "Offset from Main Bar",
+                    "description": "Offset distance from main radial bar",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcCornerRadius": {
+                    "displayName": "Corner Radius",
+                    "description": "Corner Radius - Maximum is half of Bar Width",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "arcLineColor": {
+                    "displayName": "Line Color",
+                    "description": "Line color of gauge.",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                         }
+                    }
+                },
+                "arcFillColor": {
+                    "displayName": "Background Color",
+                    "description": "Fill background color on the inside of gauge.",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "arcPlanColor": {
+                    "displayName": "Fiil Color",
+                    "description": "Fill foreground color (Plan).",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "radialMarker2": {
+            "displayName": "Side Radial Marker",
+            "properties": {
+                "show": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "markerHeight_major":{
+                    "displayName": "Marker Height (Major)",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "markerHeight_minor":{
+                    "displayName": "Marker Height (Minor)",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "markerWidth":{
+                    "displayName": "Marker Width",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "minimum":{
+                    "displayName": "Minimum Value",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "maximum":{
+                    "displayName": "Maximum Value",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "formating": {
+            "description": ""
+}
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "actual": {"max": 1, "kind": "Measure"},
+                    "plan":   {"max": 1, "kind": "Measure"}
+                }
+            ],
+            "table": {
+                "rows" : {
+                    "select" : [
+                        { "bind": { "to": "actual"} },
+                        { "bind": { "to": "plan"} }
+                    ]
+                }
+            }
+        }
+    ]
+}

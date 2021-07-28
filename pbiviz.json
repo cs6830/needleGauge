@@ -1,0 +1,24 @@
+{"visual":{
+    "name":"NeedleGauge",
+    "displayName":"Needle Gauge",
+    "guid":"needleGauge70A8F89718814B178B177510C601883E",
+    "visualClassName":"Visual",
+    "version":"0.0.1",
+    "description":"Classic gauge with needle",
+    "supportUrl":"NA",
+    "gitHubUrl":""
+},
+"apiVersion":"2.6.0",
+"author":{
+    "name":"Tnay Chiat Siang",
+    "email":"tnay_chiatsiang@petronas.com"
+},
+"assets":{
+    "icon":"assets/icon.png"
+    },
+"externalJS":[],
+"style":"style/visual.less",
+"capabilities":"capabilities.json",
+"dependencies":null,
+"stringResources":[]
+}
