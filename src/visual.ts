@@ -41,8 +41,7 @@ import IVisualHost = powerbi.extensibility.IVisualHost;
 
 
 import * as d3 from "d3";
-import { area, curveBasis, curveBasisClosed, curveBasisOpen, curveBundle, curveCardinal, curveCardinalOpen, curveCatmullRom, curveCatmullRomOpen, curveLinear, curveNatural, entries, precisionRound, range, xml } from "d3";
-// import { interpolateSinebow, lineRadial, map, xml } from "d3";
+import { area} from "d3";
 type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
 
 export class Visual implements IVisual {
@@ -150,8 +149,7 @@ export class Visual implements IVisual {
         let arcCornerRadius:  number = this.visualSettings.radialProgressBar.arcCornerRadius;
 
         let arcOffset:        number = this.visualSettings.radialProgressBar2.arcOffset;
-        let showSecondaryBar         = this.visualSettings.radialProgressBar2.show ||
-                                       this.visualSettings.radialMarker2.show;
+        let showSecondaryBar         = this.visualSettings.radialProgressBar2.show || this.visualSettings.radialMarker2.show;
             width = Math.min(width, width - arcOffset*1.1*Number(showSecondaryBar))
         let Length_radial2:   number = this.visualSettings.radialProgressBar2.Length;
         let arcWidth2:        number = this.visualSettings.radialProgressBar2.arcWidth;
